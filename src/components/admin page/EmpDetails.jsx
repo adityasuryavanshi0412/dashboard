@@ -5,15 +5,15 @@ const EmpDetails = () => {
   const { empData } = useContext(DataContext);
   return (
     <>
-      <div className="mt-10 overflow-x-auto">
+      <div className="mt-10 p-2 overflow-x-auto">
         <table className="w-full text-center border-collapse">
           <thead>
-            <tr className="bg-red-500 text-white">
+            <tr className="bg-red-500 border-emerald-400 border text-white">
               <th className="p-3">Employee Name</th>
-              <th>New Task</th>
-              <th>Active Task</th>
-              <th>Completed Task</th>
-              <th>Failed Task</th>
+              <th className="p-3">New Task</th>
+              <th className="p-3">Active Task</th>
+              <th className="p-3">Completed Task</th>
+              <th className="p-3">Failed Task</th>
             </tr>
           </thead>
 

@@ -75,7 +75,7 @@ const AdminPage = () => {
             <input
               required
               onChange={(e) => setDate(e.target.value)}
-              className="mt-1 p-2 rounded-md  border bg-white text-black"
+              className="mt-1 p-2 rounded-md  border bg-white"
               type="date"
             />
           </label>
