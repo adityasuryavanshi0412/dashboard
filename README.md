@@ -1,16 +1,74 @@
-# React + Vite
+# 🧑‍💼 Employee Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A role-based **Employee Task Management Dashboard** built using **React + Vite**, where **Admin can assign tasks** and **Employees can track their tasks** in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### 🔐 Authentication (Role Based)
+- Admin Login
+- Employee Login
+- Validation using local data
+- Logout functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👨‍💼 Admin Dashboard
+- Create and assign tasks to employees
+- Assign task category, title, date, and description
+- View all employees with:
+  - New tasks count
+  - Active tasks
+  - Completed tasks
+  - Failed tasks
+- Real-time task updates using React Context API
 
-## Expanding the ESLint configuration
+### 👷 Employee Dashboard
+- Personalized greeting with username
+- Task summary cards:
+  - New Tasks
+  - Active Tasks
+  - Completed Tasks
+  - Failed Tasks
+- View assigned tasks with:
+  - Category
+  - Date
+  - Description
+  - Task status (New / Active / Completed / Failed)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⚙️ Data Handling
+- Centralized state management using **React Context API**
+- Initial data stored in **LocalStorage**
+- Dynamic task updates without page reload
+
+---
+
+## 🛠️ Tech Stack
+
+- React JS
+- Vite
+- JavaScript (ES6)
+- Tailwind CSS
+- Context API
+- LocalStorage
+
+---
+
+## 🧪 Demo Credentials
+
+### 👨‍💼 Admin
+- Email: `admin@example.com`
+- Password: `123`
+
+### 👷 Employee
+- Email: `e@e.com`
+- Password: `123`
+
+---
+
+## 🚀 Installation & Setup
+
+```bash
+git clone https://github.com/adityasuryavanshi0412/dashboard.git
+cd dashboard
+npm install
+npm run dev
