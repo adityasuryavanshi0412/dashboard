@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
 
     const adminFind = adminData.find(
-      (item) => email === item.email && password === item.password
+      (item) => email === item.email && password === item.password,
     );
 
     if (adminFind) {
@@ -31,7 +31,7 @@ const Login = () => {
     }
 
     const empFind = empData.find(
-      (item) => email === item.email && password === item.password
+      (item) => email === item.email && password === item.password,
     );
 
     if (empFind) {
@@ -49,14 +49,12 @@ const Login = () => {
 
   return (
     <>
-      <div className="min-h-screen flex justify-center items-center bg-gray-900 px-4">
+      <div className="min-h-screen flex justify-center items-center bg-gray-900 p-4">
         <form
           onSubmit={handleSubmit}
           className="
-          w-full 
-          sm:w-[90%] 
-          md:w-[70%] 
-          lg:w-[40%] 
+          w-full  
+          md:w-[50%]  
           bg-black 
           border-2 border-emerald-500 
           rounded-2xl 
@@ -115,11 +113,12 @@ const Login = () => {
             py-3 
             rounded-2xl 
             font-semibold
-            transition 
+            transition-all 
             duration-300 
             hover:bg-white 
             hover:text-black 
             hover:scale-95
+            
           "
           >
             LOG IN

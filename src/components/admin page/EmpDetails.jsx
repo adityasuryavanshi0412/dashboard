@@ -8,12 +8,12 @@ const EmpDetails = () => {
       <div className="mt-10 p-2 overflow-x-auto">
         <table className="w-full text-center border-collapse">
           <thead>
-            <tr className="bg-red-500 border-emerald-400 border text-white">
-              <th className="p-3">Employee Name</th>
-              <th className="p-3">New Task</th>
-              <th className="p-3">Active Task</th>
-              <th className="p-3">Completed Task</th>
-              <th className="p-3">Failed Task</th>
+            <tr className="bg-red-500 border-emerald-400 border text-sm md:text-lg text-white">
+              <th className="p-1 md:p-3">Employee Name</th>
+              <th className="p-1 md:p-3">New Task</th>
+              <th className="p-1 md:p-3">Active Task</th>
+              <th className="p-1 md:p-3">Completed Task</th>
+              <th className="p-1 md:p-3">Failed Task</th>
             </tr>
           </thead>
 

@@ -30,7 +30,7 @@ const AdminPage = () => {
     const copyData = [...empData];
 
     const emp = copyData.find(
-      (e) => e.firstName.toLowerCase() === empName.toLowerCase()
+      (e) => e.firstName.toLowerCase() === empName.toLowerCase(),
     );
 
     if (emp) {
@@ -55,7 +55,7 @@ const AdminPage = () => {
 
       <form
         onSubmit={submitHandler}
-        className="mt-10 grid gap-6 grid-cols-1 lg:grid-cols-2 bg-gray-800 rounded-2xl p-6"
+        className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 bg-gray-800 rounded-2xl p-6"
       >
         <div className="flex flex-col gap-4">
           <label className="text-white flex flex-col">
@@ -75,7 +75,7 @@ const AdminPage = () => {
             <input
               required
               onChange={(e) => setDate(e.target.value)}
-              className="mt-1 p-2 rounded-md  border bg-white"
+              className="mt-1 p-2 rounded-md bg-transparent border border-gray-400 text-white"
               type="date"
             />
           </label>
@@ -119,7 +119,7 @@ const AdminPage = () => {
 
           <button
             type="submit"
-            className="mt-auto bg-emerald-600 text-white p-3 rounded-md hover:bg-emerald-700 transition active:scale-95"
+            className="mt-auto bg-emerald-600 text-white p-3 rounded-md hover:bg-emerald-700 transition-all active:scale-95"
           >
             Create Task
           </button>
